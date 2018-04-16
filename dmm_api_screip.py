@@ -40,7 +40,7 @@ print('取得したitems数:{}'.format(len(items.item)))
 for item in items:
     print('----------------')
     title=item.title.string #動画タイトル
-    title=(title[:40]+'..動画はコチラ→')　if len(title) > 75 else title #タイトルが40字を超えたら省略
+    title=(title[:40]+'..動画はコチラ→') if len(title) > 75 else title #タイトルが40字を超えたら省略
     print('title:{}'.format(title))
     photoURL=item.imageurl.large.string #画像URL
     print('photoURL:{}'.format(photoURL))
